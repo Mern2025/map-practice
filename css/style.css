@@ -1,4 +1,4 @@
-    .result {
+    /* .result {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
@@ -14,20 +14,21 @@
       font-family: Arial, sans-serif;
       font-weight: bold;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+    } */
 
 
 
     /* 2nd project css */
 
-    body {
+    .main {
   background: #f4f6f8;
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 10px;
+  gap: 5px;
 }
 
 /* Input Design */
@@ -63,4 +64,19 @@ button {
 button:hover {
   background: #2980b9;
   transform: scale(1.05);
+}
+
+.result {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.item_box {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: Arial;
 }

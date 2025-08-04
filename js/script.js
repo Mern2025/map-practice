@@ -21,13 +21,44 @@
 
 let input = document.querySelector('input')
 let button = document.querySelector('button')
+let result = document.querySelector('.result')
 let shop = ['Mango', 'Apple', 'Banana', 'Jackfruit', 'Orange']
+let p = document.querySelector('p')
 
-//find method working item looping
 
+// button.addEventListener('click',()=>{
+//     let findData = shop.find((items)=>{
+//       return  items.toLowerCase().trim() === input.value.toLowerCase().trim();
+      
+//     })
+//     console.log(findData)
+//     result.innerHTML= input.value
+
+//     // reset part
+//     input.value = ''
+// })
+
+
+shop.map((item)=>{
+    let div = document.createElement('div')
+    div.classList.add('item_box')
+     result.innerHTML += item + '<br>'
+    result.appendChild(div)
+})
 
 button.addEventListener('click',()=>{
+    result.innerHTML = ''
+    if(input.value == ''){
+        p.style.color = 'red'
+        return p.innerHTML = 'please Enter a text'
+    }
+    p.innerHTML = ''
     let findData = shop.find((items)=>{
-        
+     return  items == input.value
     })
+    console.log(findData)
+    result.innerHTML = input.value
+    result.style.color = 'green'
+    input.value = ''
+  
 })
