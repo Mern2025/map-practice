@@ -1,0 +1,17 @@
+    .result {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      background: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    .product_box {
+      background: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
