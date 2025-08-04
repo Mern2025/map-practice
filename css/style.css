@@ -15,3 +15,52 @@
       font-weight: bold;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
+
+
+    /* 2nd project css */
+
+    body {
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+/* Input Design */
+input[type="text"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="text"]:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 8px rgba(52,152,219,0.5);
+}
+
+/* Button Design */
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
